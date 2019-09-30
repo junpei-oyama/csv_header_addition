@@ -15,8 +15,8 @@ def header_add(file):
 
 def main():
     p = Path("test_data")
-    file_list = list(p.glob('**/*.csv'))
-    for f in file_list:
+    file_path_list = list(p.glob('**/*.csv'))
+    for f in file_path_list:
         header_add(f)
 
 
